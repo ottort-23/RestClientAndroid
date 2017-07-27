@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nueva Carrera"
+        android:gravity="center"
+        android:textSize="50px"
+        android:padding="50px"/>
+
+    <EditText
+        android:id="@+id/etCodigo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Codigo"/>
+    <EditText
+        android:id="@+id/etNombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nombre Facultad"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="50px"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/btIngresar"
+            android:layout_width="400px"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:onClick="login"
+            android:text="Guardar" />
+
+        <Button
+            android:id="@+id/btCancelar"
+            android:layout_width="400px"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/colorAccent"
+            android:onClick="cancel"
+            android:text="Regresar" />
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
